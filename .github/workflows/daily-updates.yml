@@ -12,6 +12,9 @@ on:
 
 jobs:
   updates:
+    name: Updates
+    runs-on: ubuntu-latest
+    steps:
       - name: Update my status
         uses: actions/github-script@v2
         with:
