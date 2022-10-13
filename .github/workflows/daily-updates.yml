@@ -1,0 +1,33 @@
+name: Daily updates
+
+on:
+  schedule:
+    # Once a day at 8 AM
+    - cron: 0 8 * * *
+  push:
+    branches:
+      - master
+  # Allows you to run this workflow manually from the Actions a tab
+  workflow_dispatch:
+
+jobs:
+  updates:
+      - name: Update my status
+        uses: actions/github-script@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
+
+            const seasons = ['Winter', 'Spring', 'Summer', 'Autumn']
+
+            const seasonIndex = getSeason(new Date());
+
+            const seasonsEmoji = ['⛄', '🌸', '☀️', '🍂']
+
+            github.graphql(query, {
+              input: {
+                emoji: `${seasonsEmoji[seasonIndex]}`,
+                message: `Hello, happy ${seasons[seasonIndex]}!`
+              }
+            })
