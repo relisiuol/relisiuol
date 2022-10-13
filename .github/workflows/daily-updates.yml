@@ -29,17 +29,36 @@ jobs:
               }
             }`
 
-            const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
+            const seasons = [
+              {
+                name:  'Spring',
+                emoji: '🌸',
+                date:  new Date(d.getFullYear(),2,(d.getFullYear() % 4 === 0) ? 19 : 20).getTime()
+              },
+              {
+                name:  'Summer',
+                emoji: '☀️',
+                date:  new Date(d.getFullYear(),5,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()
+              },
+              {
+                name:  'Autumn',
+                emoji: '🍂',
+                date:  new Date(d.getFullYear(),8,(d.getFullYear() % 4 === 0) ? 22 : 23).getTime()
+              },
+              {
+                name:  'Winter',
+                emoji: '⛄',
+                date:  new Date(d.getFullYear(),11,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()
+              }
+            ];
 
-            const seasons = ['Winter', 'Spring', 'Summer', 'Autumn']
+            const currentDate = new Date();
 
-            const seasonIndex = getSeason(new Date());
-
-            const seasonsEmoji = ['⛄', '🌸', '☀️', '🍂']
-
+            const season = seasons.filter(({ date }) => date <= currentDate).slice(-1)[0] || seasons[3]
+ 
             github.graphql(query, {
               input: {
-                emoji: `${seasonsEmoji[seasonIndex]}`,
-                message: `Hello, happy ${seasons[seasonIndex]}!`
+                emoji: `${season.emoji}`,
+                message: `Hello, happy ${season.name}!`
               }
             })
