@@ -20,6 +20,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const query = `mutation changeUserStatus ($input: ChangeUserStatusInput!) {
+              changeUserStatus (input: $input) {
+                status {
+                  emoji
+                  message
+                }
+              }
+            }`
+
             const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
 
             const seasons = ['Winter', 'Spring', 'Summer', 'Autumn']
