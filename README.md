@@ -1,6 +1,6 @@
 <p align="left">
     <a href="https://github.com/relisiuol/relisiuol/blob/main/README-fr.md">
-        <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/README-fr.svg" alt="LISEZ-MOI EN FRANÇAIS" />
+        <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/readme-fr.svg" alt="Lisez-moi en Français" />
     </a>
 </p>
 
