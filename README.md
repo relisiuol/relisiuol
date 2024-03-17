@@ -2,7 +2,7 @@
 
 [![Lisez-moi en Français](https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/readme-fr.svg)](https://github.com/relisiuol/relisiuol/blob/main/README-fr.md)
 
-=========================
+---
 
 ## A passionate developer from France
 
