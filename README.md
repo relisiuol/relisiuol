@@ -12,9 +12,13 @@
 
 - 💬 Ask me for help in **php**
 
+---
+
 ### Contact
 
 [![relisiuol](https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/relisiuol-en.svg)](https://twitter.com/relisiuol)
+
+---
 
 ### Languages and tools
 
@@ -137,5 +141,7 @@
         <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/xcode.svg" alt="xcode" width="40" height="40"/>
     </a>
 </p>
+
+---
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=relisiuol&show_icons=true&locale=fr" alt="relisiuol" /></p>
