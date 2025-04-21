@@ -38,6 +38,9 @@
     <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/bootstrap.svg" alt="bootstrap" width="40" height="40"/>
     </a>
+    <a href="https://cakephp.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/cakephp.svg" alt="cakephp" width="40" height="40"/>
+    </a>
     <a href="https://getcomposer.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/composer.svg" alt="composer" width="40" height="40"/>
     </a>
