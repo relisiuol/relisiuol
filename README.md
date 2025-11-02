@@ -143,6 +143,9 @@
     <a href="https://developer.apple.com/xcode/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/xcode.svg" alt="xcode" width="40" height="40"/>
     </a>
+    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/relisiuol/relisiuol/main/assets/images/python.svg" alt="python" width="40" height="40"/>
+    </a>
 </p>
 
 ---
